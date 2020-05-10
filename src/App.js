@@ -27,11 +27,7 @@ class ListOfBooks extends React.Component {
         <div className="list-books-title">
           <h1>MyReads</h1>
         </div>
-        <div className="list-books-content">
-          <div>
-            <Bookshelves />
-          </div>
-        </div>
+        <Bookshelves />
         <div className="open-search">
           <Link to="search">
             <button>Add a book</button>
@@ -178,10 +174,12 @@ class Bookshelf extends React.Component {
 class Bookshelves extends React.Component {
   render() {
     return (
-      <div>
-        <Bookshelf />
-        <Bookshelf />
-        <Bookshelf />
+      <div className="list-books-content">
+        <div>
+          <Bookshelf />
+          <Bookshelf />
+          <Bookshelf />
+        </div>
       </div>
     );
   }
