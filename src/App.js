@@ -29,7 +29,7 @@ class ListOfBooks extends React.Component {
         </div>
         <div className="list-books-content">
           <div>
-            <Bookshelf />
+            <Bookshelves />
           </div>
         </div>
         <div className="open-search">
@@ -174,3 +174,17 @@ class Bookshelf extends React.Component {
 }
 
 //export default Bookshelf;
+
+class Bookshelves extends React.Component {
+  render() {
+    return (
+      <div>
+        <Bookshelf />
+        <Bookshelf />
+        <Bookshelf />
+      </div>
+    );
+  }
+}
+
+//export default Bookshelves;
