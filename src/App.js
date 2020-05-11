@@ -22,12 +22,13 @@ export default BooksApp;
 
 class ListOfBooks extends React.Component {
   render() {
+    const { bookshelves } = this.props; //get the actual books later
     return (
       <div className="list-books">
         <div className="list-books-title">
           <h1>MyReads</h1>
         </div>
-        <Bookshelves />
+        <Bookshelves bookshelves={bookshelves} />
         <div className="open-search">
           <Link to="search">
             <button>Add a book</button>
