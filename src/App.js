@@ -68,12 +68,13 @@ class SearchBooks extends React.Component {
 
 class Bookshelves extends React.Component {
   render() {
+    const { bookshelves } = this.props;
     return (
       <div className="list-books-content">
         <div>
-          <Bookshelf />
-          <Bookshelf />
-          <Bookshelf />
+          {bookshelves.map((shelf) => (
+            <Bookshelf shelf={shelf} /> /*add key later */
+          ))}
         </div>
       </div>
     );
