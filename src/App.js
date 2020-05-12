@@ -141,12 +141,9 @@ class SearchHeading extends React.Component {
   render() {
     return (
       <div className="search-books-bar">
-        <button
-          className="close-search"
-          onClick={() => this.setState({ showSearchPage: false })}
-        >
-          Close
-        </button>
+        <Link to="/">
+          <button className="close-search">Close</button>
+        </Link>
         <div className="search-books-input-wrapper">
           <input type="text" placeholder="Search by title or author" />
         </div>
