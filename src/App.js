@@ -153,3 +153,15 @@ class SearchHeading extends React.Component {
 }
 
 //export default SearchHeading;
+
+class SearchResults extends React.Component {
+  render() {
+    return (
+      <div className="search-books-results">
+        <ol className="books-grid" />
+      </div>
+    );
+  }
+}
+
+//export default SearchResults;
