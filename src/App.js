@@ -98,6 +98,7 @@ class Bookshelf extends React.Component {
 
 class Book extends React.Component {
   render() {
+    const { book, shelf } = props;
     return (
       <li>
         <div className="book">
