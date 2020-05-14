@@ -111,7 +111,7 @@ class Book extends React.Component {
                 backgroundImage: `url(${book.imageLinks.smallThumbnail})`,
               }}
             />
-            <ShelfChanger />
+            <ShelfChanger book={book} shelf={shelf} />
           </div>
           <div className="book-title">{book.title}</div>
           <div className="book-authors">{book.authors.join(", ")}</div>
