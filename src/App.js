@@ -60,7 +60,7 @@ class ListOfBooks extends React.Component {
 
 class Bookshelves extends React.Component {
   render() {
-    const { bookshelves } = this.props;
+    const { bookshelves, books } = this.props;
     return (
       <div className="list-books-content">
         <div>
