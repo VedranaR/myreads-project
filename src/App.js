@@ -4,6 +4,12 @@ import * as BooksAPI from "./BooksAPI";
 import "./App.css";
 
 class BooksApp extends React.Component {
+  bookshelves = [
+    { key: "currentlyReading", name: "Currently Reading" },
+    { key: "wantToRead", name: "Want to Read" },
+    { key: "read", name: "Read" },
+  ];
+
   state = {
     allBooks: [],
   };
