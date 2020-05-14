@@ -78,6 +78,7 @@ class Bookshelves extends React.Component {
 class Bookshelf extends React.Component {
   render() {
     const { shelf, books } = this.props;
+    const booksOnShelf = books.filter((book) => book.shelf === shelf.key);
     return (
       <div className="bookshelf">
         <h2 className="bookshelf-title">{shelf.name}</h2>
