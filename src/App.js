@@ -29,7 +29,7 @@ class BooksApp extends React.Component {
             <ListOfBooks bookshelves={this.bookshelves} books={allBooks} />
           )}
         />
-        <Route path="/search" component={SearchBooks} />
+        <Route path="/search" render={() => <SearchBooks books={allBooks} />} />
       </div>
     );
   }
