@@ -45,7 +45,7 @@ class ListOfBooks extends React.Component {
         <div className="list-books-title">
           <h1>MyReads</h1>
         </div>
-        <Bookshelves bookshelves={bookshelves} />
+        <Bookshelves bookshelves={bookshelves} books={books} />
         <div className="open-search">
           <Link to="search">
             <button>Add a book</button>
