@@ -39,7 +39,7 @@ export default BooksApp;
 
 class ListOfBooks extends React.Component {
   render() {
-    const { bookshelves } = this.props; //get the actual books later
+    const { bookshelves, books } = this.props; //get the actual books later
     return (
       <div className="list-books">
         <div className="list-books-title">
