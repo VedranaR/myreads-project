@@ -80,7 +80,7 @@ class Bookshelf extends React.Component {
     const { shelf } = this.props;
     return (
       <div className="bookshelf">
-        <h2 className="bookshelf-title">Read</h2>
+        <h2 className="bookshelf-title">{shelf.name}</h2>
         <div className="bookshelf-books">
           <ol className="books-grid">
             <Book />
