@@ -112,6 +112,7 @@ class Book extends React.Component {
               }}
             />
           </div>
+          <ShelfChanger />
           <div className="book-title">The Hobbit</div>
           <div className="book-authors">J.R.R. Tolkien</div>
         </div>
