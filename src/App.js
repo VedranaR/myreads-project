@@ -65,7 +65,7 @@ class Bookshelves extends React.Component {
       <div className="list-books-content">
         <div>
           {bookshelves.map((shelf) => (
-            <Bookshelf key={shelf.key} shelf={shelf} /> /*add key later */
+            <Bookshelf key={shelf.key} shelf={shelf} books={books} />
           ))}
         </div>
       </div>
