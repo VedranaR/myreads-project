@@ -132,9 +132,7 @@ class SearchBooks extends React.Component {
     return (
       <div className="search-books">
         <SearchHeading />
-        <div className="search-books-results">
-          <ol className="books-grid" />
-        </div>
+        <SearchResults />
       </div>
     );
   }
