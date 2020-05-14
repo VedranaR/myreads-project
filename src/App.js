@@ -20,15 +20,13 @@ class BooksApp extends React.Component {
   };
 
   render() {
+    const { allBooks } = this.state;
     return (
       <div className="app">
         <Route
           path="/"
           render={() => (
-            <ListOfBooks
-              bookshelves={this.bookshelves}
-              books={this.state.allBooks}
-            />
+            <ListOfBooks bookshelves={this.bookshelves} books={allBooks} />
           )}
         />
         <Route path="/search" component={SearchBooks} />
