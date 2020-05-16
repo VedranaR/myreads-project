@@ -8,7 +8,7 @@ class SearchResults extends React.Component {
       <div className="search-books-results">
         <ol className="books-grid" />
         {books.map((book) => (
-          <Book book={book} />
+          <Book book={book} shelf="" key={book.id} />
         ))}
       </div>
     );
