@@ -1,4 +1,5 @@
 import React from "react";
+import Book from "./Book";
 
 class SearchResults extends React.Component {
   render() {
