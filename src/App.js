@@ -37,27 +37,6 @@ class BooksApp extends React.Component {
 
 export default BooksApp;
 
-class ListOfBooks extends React.Component {
-  render() {
-    const { bookshelves, books } = this.props; //get the actual books later
-    return (
-      <div className="list-books">
-        <div className="list-books-title">
-          <h1>MyReads</h1>
-        </div>
-        <Bookshelves bookshelves={bookshelves} books={books} />
-        <div className="open-search">
-          <Link to="search">
-            <button>Add a book</button>
-          </Link>
-        </div>
-      </div>
-    );
-  }
-}
-
-//export default ListOfBooks;
-
 class Bookshelves extends React.Component {
   render() {
     const { bookshelves, books } = this.props;
@@ -125,9 +104,10 @@ class Book extends React.Component {
 
 class ShelfChanger extends React.Component {
   render() {
+    const { book, shelf } = this.props;
     return (
       <div className="book-shelf-changer">
-        <select>
+        <select value={shelf}>
           <option value="move" disabled>
             Move to...
           </option>
