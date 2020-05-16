@@ -19,4 +19,4 @@ class ShelfChanger extends React.Component {
   }
 }
 
-//export default ShelfChanger;
+export default ShelfChanger;
