@@ -38,23 +38,6 @@ class BooksApp extends React.Component {
 
 export default BooksApp;
 
-class Bookshelves extends React.Component {
-  render() {
-    const { bookshelves, books } = this.props;
-    return (
-      <div className="list-books-content">
-        <div>
-          {bookshelves.map((shelf) => (
-            <Bookshelf key={shelf.key} shelf={shelf} books={books} />
-          ))}
-        </div>
-      </div>
-    );
-  }
-}
-
-//export default Bookshelves;
-
 class Bookshelf extends React.Component {
   render() {
     const { shelf, books } = this.props;
