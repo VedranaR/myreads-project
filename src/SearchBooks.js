@@ -11,4 +11,4 @@ class SearchBooks extends React.Component {
   }
 }
 
-//export default SearchBooks;
+export default SearchBooks;
