@@ -16,4 +16,4 @@ class SearchHeading extends React.Component {
   }
 }
 
-//export default SearchHeading;
+export default SearchHeading;

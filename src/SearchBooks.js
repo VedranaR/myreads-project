@@ -1,4 +1,5 @@
 import React from "react";
+import SearchHeading from "./SearchHeading";
 
 class SearchBooks extends React.Component {
   render() {
