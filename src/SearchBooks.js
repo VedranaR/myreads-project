@@ -8,7 +8,7 @@ class SearchBooks extends React.Component {
     return (
       <div className="search-books">
         <SearchHeading />
-        <SearchResults />
+        <SearchResults books={books} />
       </div>
     );
   }
