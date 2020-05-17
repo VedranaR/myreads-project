@@ -21,6 +21,19 @@ class BooksApp extends React.Component {
     });
   };
 
+  moveBook = (book, newShelf) => {
+    const updatedBooks = this.state.allBooks.map((b) => {
+      if (b.id === book.id) {
+        b.shelf = newShelf;
+      }
+      return b;
+    });
+
+    this.setState({
+      books: updatedBooks,
+    });
+  };
+
   render() {
     const { allBooks } = this.state;
     return (
